@@ -1,0 +1,80 @@
+.title {
+  font-family: var(--font-great-vibes);
+  color: var(--fifth-light-teal);
+  font-size: clamp(3rem, 8vw, 5rem);
+}
+
+.landing {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.app-title {
+  font-family: var(--font-great-vibes);
+  color: var(--fifth-light-teal);
+  font-size: clamp(3rem, 8vw, 5rem);
+  text-shadow: 0 0 10px var(--fifth-medium-teal),
+    0 0 20px var(--fifth-dark-teal);
+  margin-bottom: 1rem;
+  animation: spectralGlow 4s ease-in-out infinite alternate;
+}
+
+@keyframes spectralGlow {
+  from {
+    text-shadow: 0 0 10px var(--fifth-light-teal),
+      0 0 20px var(--fifth-medium-teal), 0 0 30px var(--fifth-dark-teal);
+  }
+  to {
+    text-shadow: 0 0 15px var(--fifth-light-teal),
+      0 0 30px var(--fifth-medium-teal), 0 0 45px var(--fifth-dark-teal),
+      0 0 60px var(--fifth-dark-teal);
+  }
+}
+
+.tagline {
+  font-family: var(--font-playfair);
+  color: #c0c0c0;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  margin-bottom: 3rem;
+  max-width: 600px;
+}
+
+.cta-button {
+  background: linear-gradient(
+    45deg,
+    var(--fifth-medium-teal),
+    var(--fifth-dark-teal)
+  );
+  border: 4px solid var(--steampunk-copper);
+  border-radius: 15px;
+  padding: 1rem 2.5rem;
+  color: var(--steampunk-gold);
+  font-family: var(--font-playfair);
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 0 0 20px black, inset 0 0 20px rgba(0, 0, 0, 0.8),
+    0 0 15px rgba(139, 69, 19, 0.3);
+}
+
+.cta-button:hover {
+  background: linear-gradient(
+    45deg,
+    var(--fifth-light-teal),
+    var(--fifth-medium-teal)
+  );
+  border-color: var(--steampunk-gold);
+  box-shadow: 0 0 25px var(--fifth-light-teal);
+  color: black;
+  transform: translateY(-2px);
+}

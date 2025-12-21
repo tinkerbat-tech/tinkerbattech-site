@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Great+Vibes&display=swap");
+
+:root {
+  --primary-black: black;
+  --fifth-dark-teal: #0a2428;
+  --fifth-medium-teal: #054a4f;
+  --fifth-light-teal: #2bacb2;
+  --fifth-orange: #c85715;
+  --steampunk-copper: #8b4513;
+  --steampunk-brass: #cd853f;
+  --steampunk-gold: #ffd700;
+  --font-great-vibes: "Great Vibes", cursive;
+  --font-playfair: "Playfair Display", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-playfair);
+  color: white;
+  min-height: 100vh;
+  background: var(--primary-black);
+  position: relative;
+}
