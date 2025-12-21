@@ -1,7 +1,28 @@
+.title-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
 .title {
+  display: block;
+  justify-content: center;
   font-family: var(--font-great-vibes);
   color: var(--fifth-light-teal);
   font-size: clamp(3rem, 8vw, 5rem);
+}
+
+.subtitle {
+  display: block;
+  justify-content: center;
+}
+
+.logo {
+  width: 225px;
+  height: 225px;
 }
 
 .landing {

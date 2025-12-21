@@ -1,4 +1,5 @@
 import "./App.css";
+import WelcomeMessage from "./WelcomeMessage";
 
 function App() {
   return (
@@ -6,11 +7,9 @@ function App() {
       <div className="title-section">
         <h1 className="title">Tinkerbat Tech</h1>
         <h2 className="subtitle">
-          Welcome to my spooky little world! I create apps inspired from
-          Victorian times, Steampunk fantasy, and gothic horror. I have mainly
-          created them for myself, but I'd like to share them with you. I hope
-          they bring you joy.{" "}
+          <WelcomeMessage />
         </h2>
+        <img src="/steambat.svg" alt="Steambat logo" className="logo" />
       </div>
       <div className="landing">
         <h3 className="app-title">Expense Graveyard</h3>
