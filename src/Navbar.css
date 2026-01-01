@@ -1,0 +1,108 @@
+.navbar {
+  width: 100%;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+  border-bottom: 3px solid var(--steampunk-copper);
+  padding: 0.75rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5),
+    inset 0 -1px 0 rgba(139, 69, 19, 0.3);
+  position: relative;
+  z-index: 100;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.nav-logo {
+  width: 45px;
+  height: auto;
+  filter: drop-shadow(0 0 5px rgba(255, 179, 102, 0.4));
+}
+
+.nav-title {
+  font-family: var(--font-playfair);
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  color: var(--fifth-light-teal);
+  text-shadow: 0 0 8px var(--fifth-dark-teal);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  font-family: var(--font-playfair);
+  color: var(--steampunk-brass);
+  text-decoration: none;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  padding: 0.5rem;
+}
+
+.nav-links a:hover {
+  color: var(--steampunk-gold);
+  text-shadow: 0 0 10px var(--steampunk-brass);
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: 2px solid var(--steampunk-copper);
+  border-radius: 5px;
+  color: var(--steampunk-gold);
+  font-size: 1.5rem;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-toggle:hover {
+  background: var(--steampunk-copper);
+  color: black;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.75rem 1rem;
+    flex-wrap: wrap;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 0;
+    margin-top: 1rem;
+    border-top: 1px solid var(--steampunk-copper);
+    padding-top: 1rem;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links li {
+    text-align: center;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(139, 69, 19, 0.3);
+  }
+
+  .nav-links li:last-child {
+    border-bottom: none;
+  }
+}
