@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import "./colors.css";
 import "./QuoteBanner.css";
 
 const quotes = [

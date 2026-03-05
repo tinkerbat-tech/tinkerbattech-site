@@ -1,12 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Great+Vibes&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap");
+/* ============================================================
+   colors.css — TinkerBat Tech Design Tokens
+   ============================================================
+   Single source of truth for all colors, fonts, and spacing.
+   Import this in App.css or index.css.
+   ============================================================ */
 
 :root {
-  --font-great-vibes: "Great Vibes", cursive;
-  --font-playfair: "Playfair Display", serif;
-  --font-source-serif: "Source Serif 4", serif;
-
   /* === BLACKS & DARKS === */
   --black: #000000;
   --void: #050505;
@@ -15,22 +14,14 @@
   --charcoal: #1a1a2e;
 
   /* === COPPERS & METALLICS === */
-  --steampunk-copper: #8b4513;
   --copper: #8b4513;
   --copper-light: #a0522d;
-  --steampunk-brass: #cd853f;
   --brass: #cd853f;
   --bronze: #b27a52;
-  --steampunk-gold: #ffd700;
   --gold: #ffd700;
   --warmoak: #a58b71;
-  --fifth-orange: #c85715;
 
   /* === TEALS === */
-  --primary-black: black;
-  --fifth-dark-teal: #0a2428;
-  --fifth-medium-teal: #054a4f;
-  --fifth-light-teal: #2bacb2;
   --teal-dark: #0a2428;
   --teal-deep: #054a4f;
   --teal: #2bacb2;
@@ -77,18 +68,4 @@
   --glow-copper: 0 0 15px rgba(139, 69, 19, 0.3);
   --glow-teal: 0 0 15px rgba(43, 172, 178, 0.3);
   --glow-gold: 0 0 15px rgba(255, 215, 0, 0.3);
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: var(--font-playfair);
-  color: white;
-  min-height: 100vh;
-  background: var(--primary-black);
-  position: relative;
 }

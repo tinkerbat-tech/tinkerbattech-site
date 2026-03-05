@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "./WelcomeMessage.css";
+import "./colors.css";
 
 const messages = [
   "Welcome, traveler. You've stumbled upon my workshop of curiosities — a collection of applications forged from brass and shadow, inspired by Victorian elegance, steampunk machinery, and gothic mystery. Built first for my own amusement, I now open the doors to you. May they serve you well.",
