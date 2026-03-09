@@ -8,7 +8,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="nav-brand">
-        <img src="/steambat.svg" alt="TinkerBat" className="nav-logo" />
+        <img src="/steambat-logo.png" alt="TinkerBat" className="nav-logo" />
         <span className="nav-title">TinkerBat Tech</span>
       </div>
 
