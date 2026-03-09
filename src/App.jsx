@@ -88,17 +88,17 @@ function HomePage({ onNavigate }) {
       {/* Hero Section */}
       <section className="hero">
         <LabFumes />
-        <FlyingBat delay={2} startSide="left" />
+        <FlyingBat delay={2} startSide="right" />
         <FlyingBat delay={5} startSide="right" />
-        <FlyingBat delay={8} startSide="left" />
+        <FlyingBat delay={8} startSide="right" />
 
         <div className="hero-content">
-          <img src="/steambat.svg" alt="TinkerBat Tech" className="hero-logo" />
+          {/*<img src="/steambat.svg" alt="TinkerBat Tech" className="hero-logo" />*/}
           <h1 className="hero-title">
             <FlickerText>TinkerBat Tech</FlickerText>
           </h1>
           <p className="hero-tagline">
-            Forged in darkness. Encrypted in moonlight.
+            Forged in darkness. Dreamt in moonlight.
           </p>
           <p className="hero-subtitle">
             Spooky apps for everyday use — built with privacy, chaos, and an
@@ -123,12 +123,13 @@ function HomePage({ onNavigate }) {
             </p>
             <p className="app-card-description">
               A privacy-first period tracker. Encrypted on-device, no accounts,
-              no cloud. Cycle predictions, medication tracking, and many bats.
+              no cloud. Cycle tracking, cycle predictions, and symptom tracking.
             </p>
             <div className="app-card-features">
               <span>🔐 Encrypted</span>
               <span>☁️ No Cloud</span>
-              <span>🧪 Med Tracking</span>
+              <span>🩸 Cycle Tracking</span>
+              <span>😣 Symptom Tracking</span>
               <span>📊 Predictions</span>
             </div>
             <div className="app-card-screenshots">
@@ -244,18 +245,6 @@ function HomePage({ onNavigate }) {
               In the Lab
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Privacy Manifesto Banner */}
-      <section className="manifesto">
-        <div className="manifesto-content">
-          <h3 className="manifesto-title">🔒 The Oath</h3>
-          <p className="manifesto-text">
-            Your data never leaves your device. No servers. No analytics. No
-            "anonymous" telemetry that isn't really anonymous. We built our apps
-            the way a vault is built — from the inside out.
-          </p>
         </div>
       </section>
 
@@ -576,7 +565,7 @@ function Footer({ onNavigate }) {
           © {new Date().getFullYear()} TinkerBat Tech LLC. All rights reserved.
         </p>
         <p className="footer-tagline">
-          Built with spite, copper wire, and too much caffeine. 🦇
+          Built with imagination, copper wire, and too much caffeine. 🦇
         </p>
       </div>
     </footer>

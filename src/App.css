@@ -87,7 +87,8 @@ a:hover {
 }
 
 .nav-logo-text {
-  font-family: var(--font-display);
+  font-family: var(--font-body);
+
   font-size: 1.4rem;
   color: var(--brass);
 }
@@ -134,7 +135,7 @@ a:hover {
   padding: 6rem 2rem 4rem;
   background: radial-gradient(
     ellipse at center bottom,
-    var(--obsidian) 0%,
+    var(--teal-deep) 0%,
     var(--black) 70%
   );
 }
@@ -174,7 +175,7 @@ a:hover {
 .hero-subtitle {
   font-family: var(--font-body);
   font-size: clamp(0.9rem, 2vw, 1.1rem);
-  color: var(--slate);
+  color: var(--bronze);
   max-width: 550px;
   margin: 0 auto;
   line-height: 1.6;
@@ -249,7 +250,7 @@ a:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: var(--copper);
+  background: var(--gold);
   opacity: 0;
   animation: fume-rise linear infinite;
 }
@@ -594,7 +595,7 @@ a:hover {
 }
 
 .app-card {
-  background: linear-gradient(180deg, var(--obsidian) 0%, var(--midnight) 100%);
+  background: linear-gradient(180deg, var(--black) 0%, var(--plum-dark) 100%);
   border: 1px solid var(--steel-dark);
   border-radius: var(--card-radius);
   padding: 2rem;
@@ -892,42 +893,6 @@ a:hover {
 }
 
 /* ============================================================
-   MANIFESTO BANNER
-   ============================================================ */
-
-.manifesto {
-  padding: 4rem 2rem;
-  background: linear-gradient(
-    180deg,
-    var(--black) 0%,
-    rgba(0, 50, 0, 0.1) 50%,
-    var(--black) 100%
-  );
-  border-top: 1px solid rgba(0, 150, 0, 0.15);
-  border-bottom: 1px solid rgba(0, 150, 0, 0.15);
-}
-
-.manifesto-content {
-  max-width: 700px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.manifesto-title {
-  font-family: var(--font-display);
-  font-size: 2.5rem;
-  color: var(--sage);
-  margin-bottom: 1rem;
-}
-
-.manifesto-text {
-  font-family: var(--font-body);
-  font-size: 1.05rem;
-  color: var(--silver);
-  line-height: 1.8;
-}
-
-/* ============================================================
    THE SCIENTIST
    ============================================================ */
 
@@ -1156,7 +1121,7 @@ a.contact-card:hover {
 }
 
 .footer-logo {
-  width: 45px;
+  width: 75px;
   height: auto;
   filter: drop-shadow(0 0 5px rgba(205, 133, 63, 0.3));
 }
