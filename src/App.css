@@ -83,7 +83,6 @@ a:hover {
 .nav-logo-img {
   width: 36px;
   height: 36px;
-  filter: drop-shadow(0 0 5px rgba(205, 133, 63, 0.3));
 }
 
 .nav-logo-text {
@@ -132,7 +131,7 @@ a:hover {
   justify-content: center;
   position: relative;
   overflow: hidden;
-  padding: 6rem 2rem 4rem;
+  padding: 1rem 2rem 4rem;
   background: radial-gradient(
     ellipse at center bottom,
     var(--teal-deep) 0%,

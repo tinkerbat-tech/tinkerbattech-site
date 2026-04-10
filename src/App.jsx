@@ -44,7 +44,11 @@ function Navbar({ currentPage, onNavigate }) {
     <nav className="navbar">
       <div className="nav-content">
         <button className="nav-logo" onClick={() => onNavigate("home")}>
-          <img src="/steambat.svg" alt="TinkerBat" className="nav-logo-img" />
+          <img
+            src="/steambat-logo.png"
+            alt="TinkerBat"
+            className="nav-logo-img"
+          />
           <span className="nav-logo-text">TinkerBat Tech</span>
         </button>
         <div className="nav-links">
@@ -98,10 +102,10 @@ function HomePage({ onNavigate }) {
             <FlickerText>TinkerBat Tech</FlickerText>
           </h1>
           <p className="hero-tagline">
-            Forged in darkness. Dreamt in moonlight.
+            Dreamt in moonlight. Forged in darkness.
           </p>
           <p className="hero-subtitle">
-            Spooky apps for everyday use — built with privacy, chaos, and an
+            Spooky apps for everyday use — built with imagination, chaos, and an
             unreasonable number of bats.
           </p>
         </div>
@@ -122,15 +126,17 @@ function HomePage({ onNavigate }) {
               Your cycle. Your data. Your device. Period.
             </p>
             <p className="app-card-description">
-              A privacy-first period tracker. Encrypted on-device, no accounts,
-              no cloud. Cycle tracking, cycle predictions, and symptom tracking.
+              A privacy-first period journal with werewolf energy. Encrypted
+              on-device, no accounts, no cloud, no data harvesting. Flow
+              journaling, symptom logging, cycle predictions, and exportable PDF
+              reports for your healthcare provider.
             </p>
             <div className="app-card-features">
               <span>🔐 Encrypted</span>
               <span>☁️ No Cloud</span>
-              <span>🩸 Cycle Tracking</span>
-              <span>😣 Symptom Tracking</span>
-              <span>📊 Predictions</span>
+              <span>🩸 Flow Journaling</span>
+              <span>😣 Symptom Logging</span>
+              <span>🐺 NO SUBSCRIPTIONS</span>
             </div>
             <div className="app-card-screenshots">
               <div className="app-card-placeholder">
@@ -247,37 +253,15 @@ function HomePage({ onNavigate }) {
           </div>
         </div>
       </section>
-
-      {/* The Scientist */}
-      <section className="scientist">
-        <div className="scientist-content">
-          <span className="scientist-emoji">🔬</span>
-          <h3 className="scientist-title">The Scientist</h3>
-          <p className="scientist-text">
-            Built by a creature who trades in both vital signs and voltage — a
-            healthcare professional turned rogue developer who believes your
-            body's data belongs to exactly one person: you.
-          </p>
-          <p className="scientist-text">
-            Operating from the shadows. Fueled by an unreasonable number of
-            energy drinks and an unshakeable conviction that steampunk gears
-            make everything better.
-          </p>
-          <p className="scientist-sign-off">
-            <em>The bats send their regards.</em> 🦇
-          </p>
-        </div>
-      </section>
     </>
   );
 }
-
 function PrivacyPage() {
   return (
     <section className="legal-page">
       <div className="legal-content">
         <h1 className="legal-title">🔒 Privacy Policy</h1>
-        <p className="legal-updated">Last updated: March 2026</p>
+        <p className="legal-updated">Last updated: April 2026</p>
 
         <div className="legal-section">
           <h2>Your Data, Your Device</h2>
@@ -297,14 +281,12 @@ function PrivacyPage() {
             <p>
               Blood Moon Almanac stores all data locally on your device. We do
               not collect, transmit, or store any personal data on external
-              servers.
+              servers — because there are no servers.
             </p>
             <p>
-              <strong>Data stored on your device includes:</strong> cycle
-              tracking data, symptom logs, medication records, and app
-              preferences. All health data is encrypted at rest on your device.
-              Encryption keys are stored securely in your device's protected
-              hardware.
+              <strong>Data stored on your device includes:</strong> cycle data,
+              symptom records, medication entries, and app preferences. All
+              health data is encrypted on your device.
             </p>
           </div>
 
@@ -331,7 +313,9 @@ function PrivacyPage() {
             <p>
               You may export your data as a PDF report at any time through the
               app's export feature. This export is generated locally on your
-              device and is not transmitted to any server.
+              device and is not transmitted to any server. Note that PDF exports
+              are unencrypted once created — protecting them after export is
+              your responsibility.
             </p>
           </div>
 
@@ -385,7 +369,9 @@ function PrivacyPage() {
             <h3>Children's Privacy</h3>
             <p>
               Our apps are not directed at children under 13. We do not
-              knowingly collect data from children.
+              knowingly collect data from anyone, including children. Users must
+              be at least 13 years old, or the minimum age required to use
+              digital services in their country, whichever is higher.
             </p>
           </div>
 
@@ -421,7 +407,7 @@ function TermsPage() {
     <section className="legal-page">
       <div className="legal-content">
         <h1 className="legal-title">📜 Terms of Use</h1>
-        <p className="legal-updated">Last updated: March 2026</p>
+        <p className="legal-updated">Last updated: April 2026</p>
 
         <div className="legal-section">
           <h2>Acceptance of Terms</h2>
@@ -444,12 +430,13 @@ function TermsPage() {
         <div className="legal-section">
           <h2>Medical Disclaimer</h2>
           <p>
-            Blood Moon Almanac is a tracking tool and is NOT a medical device.
-            It does not provide medical advice, diagnoses, or treatment
-            recommendations. Cycle predictions are estimates based on historical
-            data and should not be used as a sole method of contraception or
-            fertility planning. Always consult a qualified healthcare provider
-            for medical decisions.
+            Blood Moon Almanac is a journaling and education tool and is NOT a
+            medical device. It does not provide medical advice, diagnoses, or
+            treatment recommendations. Period and fertility predictions are
+            estimates based on your recorded cycle data and should NOT be used
+            for pregnancy planning, prevention, or as a method of contraception.
+            Always consult a qualified healthcare provider for medical and
+            reproductive health decisions.
           </p>
         </div>
 
@@ -459,15 +446,19 @@ function TermsPage() {
             Because all data is stored locally on your device, you are
             responsible for maintaining backups and securing your device.
             TinkerBat Tech LLC is not responsible for data loss due to device
-            failure, theft, or accidental deletion.
+            failure, theft, or accidental deletion. PDF exports created from the
+            app are unencrypted and your responsibility to protect once shared
+            or saved outside the app.
           </p>
         </div>
 
         <div className="legal-section">
           <h2>Intellectual Property</h2>
           <p>
-            All content, designs, and branding associated with TinkerBat Tech
-            applications are the property of TinkerBat Tech LLC.
+            All content, designs, branding, characters, and original artwork
+            associated with TinkerBat Tech applications — including but not
+            limited to Blood Moon Almanac, the SteamWolf and SteamBat logos, and
+            all related lore — are the property of TinkerBat Tech LLC.
           </p>
         </div>
 
