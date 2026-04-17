@@ -327,6 +327,18 @@ function PrivacyPage() {
               permanently.
             </p>
           </div>
+
+          <div className="legal-section">
+            <h3>Screenshot Protection</h3>
+            <p>
+              Blood Moon Almanac offers optional screenshot blocking on
+              sensitive screens including medications, cycle data, and symptoms.
+              This feature is off by default and can be enabled in Settings.
+              When enabled, screenshots on protected screens will produce a
+              blank image on iOS or be blocked entirely on Android. This feature
+              is local to your device and does not transmit any data.
+            </p>
+          </div>
         </div>
 
         {/* Adventure Graveyard Privacy */}
