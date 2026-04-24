@@ -93,8 +93,10 @@ function HomePage({ onNavigate }) {
       <section className="hero">
         <LabFumes />
         <FlyingBat delay={2} startSide="right" />
-        <FlyingBat delay={5} startSide="right" />
+        <FlyingBat delay={5} startSide="left" />
         <FlyingBat delay={8} startSide="right" />
+        <FlyingBat delay={11} startSide="left" />
+        <FlyingBat delay={14} startSide="right" />
 
         <div className="hero-content">
           {/*<img src="/steambat.svg" alt="TinkerBat Tech" className="hero-logo" />*/}
@@ -261,7 +263,7 @@ function PrivacyPage() {
     <section className="legal-page">
       <div className="legal-content">
         <h1 className="legal-title">🔒 Privacy Policy</h1>
-        <p className="legal-updated">Last updated: April 2026</p>
+        <p className="legal-updated">Last updated: April 23, 2026</p>
 
         <div className="legal-section">
           <h2>Your Data, Your Device</h2>
@@ -293,9 +295,10 @@ function PrivacyPage() {
           <div className="legal-section">
             <h3>Data We Do NOT Collect</h3>
             <p>
-              We do not collect your name, email address, phone number, location
-              data, device identifiers, analytics, crash reports, or any form of
-              telemetry. Zero. None. Zilch.
+              We do not collect your name, email address, phone number, birth
+              date, age, biometric data, location data, device identifiers,
+              analytics, crash reports, or any form of telemetry. Zero. None.
+              Zilch.
             </p>
           </div>
 
@@ -339,37 +342,41 @@ function PrivacyPage() {
               is local to your device and does not transmit any data.
             </p>
           </div>
+
+          <div className="legal-section">
+            <h3>Biometric Authentication</h3>
+            <p>
+              Blood Moon Almanac offers optional biometric unlock (Face ID,
+              Touch ID, or fingerprint). Biometric authentication is performed
+              entirely by your device's operating system using secure hardware
+              built into your phone. Blood Moon Almanac and TinkerBat Tech LLC
+              do not collect, store, transmit, access, or process any biometric
+              information at any time. Your fingerprint or face scan data never
+              leaves your device and is never visible to the app.
+            </p>
+          </div>
+
+          <div className="legal-section">
+            <h3>Law Enforcement & Legal Requests</h3>
+            <p>
+              We understand the sensitive nature of reproductive health data.
+              Because Blood Moon Almanac stores all data locally on your device
+              and we operate without servers, we cannot comply with data
+              requests — there is no server to subpoena, no database to search,
+              no records to hand over. Your data exists only on your physical
+              device, protected by your device's security.
+            </p>
+          </div>
         </div>
 
         {/* Adventure Graveyard Privacy */}
         <div className="legal-app-block">
-          <h2 className="legal-app-heading">
-            ⚰️ Adventure Graveyard - COMING SOON
-          </h2>
-
+          <h2 className="legal-app-heading">⚰️ Adventure Graveyard</h2>
           <div className="legal-section">
-            {/* <h3>Data Storage</h3>
             <p>
-              Adventure Graveyard stores all trip data, expenses, and
-              preferences locally on your device. No accounts are required and
-              no data is transmitted to external servers.
+              Adventure Graveyard is currently in development. Its privacy
+              policy will be published before launch.
             </p>
-          </div>
-
-          <div className="legal-section">
-            <h3>Data We Do NOT Collect</h3>
-            <p>
-              We do not collect personal information, location data, device
-              identifiers, or any analytics from Adventure Graveyard.
-            </p>
-          </div>
-
-          <div className="legal-section">
-            <h3>Third-Party SDKs</h3>
-            <p>
-              Adventure Graveyard does not include advertising, analytics, or
-              social media SDKs.
-            </p>*/}
           </div>
         </div>
 
@@ -378,13 +385,63 @@ function PrivacyPage() {
           <h2 className="legal-app-heading">📋 General Policies</h2>
 
           <div className="legal-section">
-            <h3>Children's Privacy</h3>
+            <h3>Children's Privacy & Age Requirements</h3>
             <p>
-              Our apps are not directed at children under 13. We do not
-              knowingly collect data from anyone, including children. Users must
-              be at least 13 years old, or the minimum age required to use
-              digital services in their country, whichever is higher.
+              Our apps require users to be at least 13 years old, or the minimum
+              age required to use digital services in their country, whichever
+              is higher. Users aged 13 to 17 should have parental permission
+              before using our apps.
             </p>
+
+            <h4>COPPA Compliance</h4>
+            <p>
+              In accordance with the Children's Online Privacy Protection Act
+              (COPPA), users who identify as under 13 are prevented from
+              accessing our apps. If a parent, guardian, or other responsible
+              party notifies us that a user under 13 is using one of our apps,
+              we will respond promptly to coordinate the child's transition off
+              the app. To report a concern, contact{" "}
+              <a href="mailto:support@tinkerbattech.com">
+                support@tinkerbattech.com
+              </a>
+              .
+            </p>
+
+            <p>
+              Because our apps store all data locally on your device and operate
+              without servers, no personal information is collected,
+              transmitted, or stored from any user — which means there is no
+              data from an under-13 user for us to retain, transfer, or delete.
+            </p>
+          </div>
+
+          <div className="legal-section">
+            <h3>Regulatory Compliance</h3>
+            <p>
+              Our local-only architecture means we are structurally unable to
+              collect, share, or sell your personal information. This places us
+              in compliance with major privacy frameworks:
+            </p>
+            <ul>
+              <li>
+                <strong>GDPR (European Union):</strong> We do not process
+                personal data in the manner GDPR regulates because no data
+                leaves your device.
+              </li>
+              <li>
+                <strong>CCPA / CPRA (California):</strong> We do not sell,
+                share, or disclose personal information to any third party.
+              </li>
+              <li>
+                <strong>Washington My Health My Data Act:</strong> Consumer
+                health data is not transmitted off-device, sold, shared, or
+                subject to geofencing.
+              </li>
+              <li>
+                <strong>COPPA (United States):</strong> See Children's Privacy
+                section above.
+              </li>
+            </ul>
           </div>
 
           <div className="legal-section">
@@ -419,7 +476,7 @@ function TermsPage() {
     <section className="legal-page">
       <div className="legal-content">
         <h1 className="legal-title">📜 Terms of Use</h1>
-        <p className="legal-updated">Last updated: April 2026</p>
+        <p className="legal-updated">Last updated: April 23, 2026</p>
 
         <div className="legal-section">
           <h2>Acceptance of Terms</h2>
@@ -445,10 +502,92 @@ function TermsPage() {
             Blood Moon Almanac is a journaling and education tool and is NOT a
             medical device. It does not provide medical advice, diagnoses, or
             treatment recommendations. Period and fertility predictions are
-            estimates based on your recorded cycle data and should NOT be used
-            for pregnancy planning, prevention, or as a method of contraception.
-            Always consult a qualified healthcare provider for medical and
-            reproductive health decisions.
+            estimates based on your recorded cycle data and have no guaranteed
+            accuracy. Blood Moon Almanac is NOT a contraceptive tool and should
+            not be relied upon for pregnancy planning, prevention, or as a
+            method of contraception. Always consult a qualified healthcare
+            provider for medical and reproductive health decisions, including
+            any decisions related to fertility, contraception, or pregnancy.
+          </p>
+        </div>
+
+        <div className="legal-section">
+          <h2>Not Birth Control</h2>
+          <p>
+            Blood Moon Almanac is NOT a contraceptive method. Do NOT rely on
+            this app to prevent pregnancy. Fertility journaling can help you
+            understand your cycle, but it is NOT foolproof birth control. Use
+            proper contraception if you wish to avoid pregnancy, and consult a
+            qualified healthcare provider for contraceptive guidance.
+          </p>
+        </div>
+
+        <div className="legal-section">
+          <h2>Prediction Accuracy</h2>
+          <p>
+            Cycle predictions in Blood Moon Almanac are estimates generated from
+            your recorded cycle data. Prediction accuracy varies based on the
+            regularity of your cycle and the amount of historical data
+            available. Cycles can shift due to stress, illness, travel,
+            medications, hormonal changes, lifestyle changes, perimenopause, and
+            many other factors. Predictions are journaling references, not
+            medical forecasts, and should not be treated as guarantees.
+          </p>
+        </div>
+
+        <div className="legal-section">
+          <h2>Age Requirement</h2>
+          <p>
+            You must be at least 13 years old to use Blood Moon Almanac, or the
+            minimum age required to use digital services in your country,
+            whichever is higher. Users aged 13 to 17 should have parental
+            permission before using the app. See our Privacy Policy for details
+            on age verification and COPPA compliance.
+          </p>
+        </div>
+
+        <div className="legal-section">
+          <h2>Data Security & Access</h2>
+          <p>
+            Your data in Blood Moon Almanac is encrypted on your device and
+            protected by your PIN and/or biometric authentication (Face ID,
+            Touch ID, or fingerprint). Please understand the following before
+            using the app:
+          </p>
+          <ul>
+            <li>
+              Your PIN, biometric authentication, and security question are your
+              only access methods.
+            </li>
+            <li>
+              After 5 failed PIN attempts, you will be temporarily locked out.
+              Lockout duration increases with repeated failures.
+            </li>
+            <li>
+              If you forget your PIN, you can recover access using biometric
+              authentication or your security question.
+            </li>
+            <li>
+              If all recovery options fail, you must reinstall the app.
+              Reinstalling permanently deletes all data. This cannot be
+              reversed.
+            </li>
+            <li>
+              TinkerBat Tech LLC cannot recover your data under any
+              circumstances — we never had it.
+            </li>
+          </ul>
+          <p>
+            This is not a limitation — it is a deliberate security design. By
+            never storing your data, we ensure it can never be accessed by
+            anyone other than you.
+          </p>
+          <p>
+            Once you export your data (e.g., as a PDF), that file exists outside
+            the app's encrypted storage. TinkerBat Tech LLC is not responsible
+            for the security of exported files, shared documents, or data
+            accessed due to device compromise, theft, or unauthorized access to
+            your device.
           </p>
         </div>
 
@@ -462,6 +601,29 @@ function TermsPage() {
             app are unencrypted and your responsibility to protect once shared
             or saved outside the app.
           </p>
+          <p>
+            Certain features of our apps, including optional device unlock, may
+            make use of biometric authentication provided by your device's
+            operating system. Our apps do not collect, store, access, or process
+            biometric information. All biometric verification occurs entirely on
+            your device.
+          </p>
+        </div>
+
+        <div className="legal-section">
+          <h2>Legal Compliance</h2>
+          <p>You represent and warrant that:</p>
+          <ul>
+            <li>
+              You are not located in a country that is subject to a U.S.
+              Government embargo, or that has been designated by the U.S.
+              Government as a "terrorist supporting" country
+            </li>
+            <li>
+              You are not listed on any U.S. Government list of prohibited or
+              restricted parties
+            </li>
+          </ul>
         </div>
 
         <div className="legal-section">

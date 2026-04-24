@@ -875,6 +875,25 @@ a:hover {
   margin-bottom: 0.5rem;
 }
 
+.legal-section h4 {
+  color: var(--teal);
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.legal-section ul {
+  margin: 1rem 0 1rem 1.5rem;
+  padding: 0;
+}
+
+.legal-section li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+  color: var(--silver);
+}
+
 /* Responsive App Grid */
 @media (max-width: 768px) {
   .app-grid {
