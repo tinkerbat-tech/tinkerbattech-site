@@ -283,7 +283,7 @@ function PrivacyPage() {
             <p>
               Blood Moon Almanac stores all data locally on your device. We do
               not collect, transmit, or store any personal data on external
-              servers — because there are no servers.
+              servers because there are no servers.
             </p>
             <p>
               <strong>Data stored on your device includes:</strong> cycle data,
@@ -317,7 +317,7 @@ function PrivacyPage() {
               You may export your data as a PDF report at any time through the
               app's export feature. This export is generated locally on your
               device and is not transmitted to any server. Note that PDF exports
-              are unencrypted once created — protecting them after export is
+              are unencrypted once created and protecting them after export is
               your responsibility.
             </p>
           </div>
@@ -332,14 +332,82 @@ function PrivacyPage() {
           </div>
 
           <div className="legal-section">
-            <h3>Screenshot Protection</h3>
+            <h3>📸 Screenshot Protection</h3>
             <p>
-              Blood Moon Almanac offers optional screenshot blocking on
-              sensitive screens including medications, cycle data, and symptoms.
-              This feature is off by default and can be enabled in Settings.
-              When enabled, screenshots on protected screens will produce a
-              blank image on iOS or be blocked entirely on Android. This feature
-              is local to your device and does not transmit any data.
+              Blood Moon Almanac blocks screenshots on sensitive screens
+              including medications, cycle data, and symptoms. This feature is
+              ON by default to protect your privacy automatically.
+            </p>
+            <p>
+              When enabled, screenshots on protected screens produce a blank
+              image on iOS or are blocked entirely on Android. This feature runs
+              locally on your device and does not transmit any data.
+            </p>
+            <p>
+              You can disable screenshot blocking in Settings, but doing so
+              requires PIN entry to confirm the change.
+            </p>
+          </div>
+
+          <div className="legal-section">
+            <h3>☁️ Why Screenshot Blocking Matters</h3>
+            <p>
+              A screenshot of cycle, symptom, or medication data becomes a photo
+              in your device's photo library. Once it exists outside the app's
+              encrypted storage, that photo can travel to places where the app's
+              privacy protections no longer apply. Common pathways include:
+            </p>
+            <ul>
+              <li>
+                <strong>Cloud photo sync services:</strong> Many photo apps
+                automatically upload images from your device to cloud servers,
+                where they may be stored indefinitely and accessed by the
+                service provider.
+              </li>
+              <li>
+                <strong>Device backup services:</strong> Automated backup tools
+                that protect your phone's data may include the entire photo
+                library, meaning sensitive screenshots could be backed up
+                alongside your contacts and other data.
+              </li>
+              <li>
+                <strong>Photo content recognition:</strong> Modern phones
+                include features that scan photos to identify objects, recognize
+                text, and search by content. Once a screenshot enters your photo
+                library, these features may process it.
+              </li>
+              <li>
+                <strong>Third-party apps:</strong> Any app you've granted photo
+                library access to can read your entire photo collection,
+                including screenshots of sensitive health data.
+              </li>
+              <li>
+                <strong>Shared albums and direct sharing:</strong> Photos can be
+                inadvertently shared through automatic shared album syncing,
+                accidental device-to-device transfers, or multi-select sharing
+                actions.
+              </li>
+              <li>
+                <strong>Phone repair and resale:</strong> Photos that haven't
+                been deleted may persist when a phone is repaired, resold, or
+                recovered.
+              </li>
+            </ul>
+            <p>
+              None of these pathways exist when screenshot blocking is on,
+              because the screenshot is never created in the first place. The
+              data stays inside the app's encrypted local storage on your
+              device, protected by your PIN, your biometric, and your phone's
+              hardware security. It never leaves your device, so it cannot be
+              exposed through the photo library or any service that reads from
+              it.
+            </p>
+            <p>
+              If you do choose to take a screenshot of your data, for instance,
+              to share with a healthcare provider, please be aware that you are
+              responsible for the security of that screenshot once it exists.
+              Consider deleting it after sharing, and review which apps have
+              access to your photo library.
             </p>
           </div>
 
@@ -445,6 +513,29 @@ function PrivacyPage() {
           </div>
 
           <div className="legal-section">
+            <h3>Third-Party Services</h3>
+            <p>
+              Blood Moon Almanac does not integrate with any third-party
+              services that receive your personal or health data. Specifically:
+            </p>
+            <ul>
+              <li>No advertising SDKs or ad networks</li>
+              <li>No analytics platforms or third-party tracking SDKs</li>
+              <li>No social media SDKs or third-party social integrations</li>
+              <li>No crash reporting services that send data externally</li>
+              <li>No A/B testing or experimentation platforms</li>
+              <li>No data brokers or data enrichment services</li>
+              <li>No AI or machine learning services that process your data</li>
+            </ul>
+            <p>
+              Note: Your device's operating system may collect its own usage
+              data independently of this app. Those practices are governed by
+              the operating system provider's privacy policies, not ours, and
+              are outside our control.
+            </p>
+          </div>
+
+          <div className="legal-section">
             <h3>Changes to This Policy</h3>
             <p>
               We may update this Privacy Policy from time to time. Changes will
@@ -490,9 +581,18 @@ function TermsPage() {
         <div className="legal-section">
           <h2>License</h2>
           <p>
+            This End User License Agreement ("Agreement") is between you and
+            TinkerBat Tech LLC ("TinkerBat Tech," "we," "us"), and not with
+            Apple, Inc. ("Apple"). TinkerBat Tech is solely responsible for
+            Blood Moon Almanac and its content.
+          </p>
+          <p>
             We grant you a limited, non-exclusive, non-transferable, revocable
-            license to use our applications for personal, non-commercial
-            purposes in accordance with these terms.
+            license to use Blood Moon Almanac on any Apple-branded device that
+            you own or control, as permitted by the Apple Media Services Terms
+            and Conditions. You may not distribute, sublicense, rent, lease, or
+            lend the app. If you sell or give away your device, you must remove
+            the app first.
           </p>
         </div>
 
@@ -532,6 +632,46 @@ function TermsPage() {
             medications, hormonal changes, lifestyle changes, perimenopause, and
             many other factors. Predictions are journaling references, not
             medical forecasts, and should not be treated as guarantees.
+          </p>
+        </div>
+
+        <div className="legal-section">
+          <h2>Diabetes & Blood Sugar Journaling</h2>
+          <p>
+            Blood Moon Almanac allows you to journal blood glucose readings,
+            daily total insulin units (with optional basal and bolus breakdown),
+            and blood sugar-related symptoms alongside your menstrual cycle
+            data. This feature is designed to help you identify patterns that
+            may be useful to discuss with your healthcare provider.
+          </p>
+          <p>
+            Blood Moon Almanac is NOT a medical device and is NOT intended to:
+          </p>
+          <ul>
+            <li>
+              Provide medical advice, diagnoses, or treatment recommendations
+            </li>
+            <li>Recommend insulin dosages, adjustments, or timing</li>
+            <li>
+              Replace the advice of your doctor, endocrinologist, diabetes
+              educator, or other healthcare provider
+            </li>
+            <li>Predict or warn of hypoglycemic or hyperglycemic events</li>
+            <li>
+              Serve as a continuous glucose monitor (CGM), glucose meter, or
+              insulin pump replacement
+            </li>
+          </ul>
+          <p>
+            Always consult your healthcare provider before making changes to
+            your insulin regimen, medication, or diabetes management plan. If
+            you are experiencing a diabetic emergency, contact emergency
+            services or your healthcare provider immediately.
+          </p>
+          <p>
+            All blood glucose and insulin data is stored locally on your device
+            using the same encryption applied to all Blood Moon Almanac data.
+            This information is never transmitted, shared, or stored externally.
           </p>
         </div>
 
@@ -611,6 +751,71 @@ function TermsPage() {
         </div>
 
         <div className="legal-section">
+          <h2>Maintenance & Support</h2>
+          <p>
+            TinkerBat Tech LLC is solely responsible for providing maintenance
+            and support services for Blood Moon Almanac. You can reach us at{" "}
+            <a href="mailto:support@tinkerbattech.com">
+              support@tinkerbattech.com
+            </a>{" "}
+            for support inquiries.
+          </p>
+          <p>
+            Apple has no obligation whatsoever to furnish any maintenance or
+            support services with respect to Blood Moon Almanac.
+          </p>
+        </div>
+
+        <div className="legal-section">
+          <h2>Warranty</h2>
+          <p>
+            Blood Moon Almanac is provided "AS IS" and "AS AVAILABLE" without
+            warranty of any kind. TinkerBat Tech LLC disclaims all warranties,
+            express or implied, including but not limited to implied warranties
+            of merchantability, fitness for a particular purpose, and
+            non-infringement. We do not warrant that the app will be
+            uninterrupted, error-free, or free of harmful components.
+          </p>
+          <p>
+            In the event of any failure of Blood Moon Almanac to conform to any
+            applicable warranty, you may notify Apple, and Apple will refund the
+            purchase price (if any) for the app. To the maximum extent permitted
+            by applicable law, Apple has no other warranty obligation whatsoever
+            with respect to Blood Moon Almanac. Any other claims, losses,
+            liabilities, damages, costs, or expenses attributable to any failure
+            to conform to any warranty are the sole responsibility of TinkerBat
+            Tech LLC.
+          </p>
+        </div>
+
+        <div className="legal-section">
+          <h2>Product Claims & Liability</h2>
+          <p>
+            You acknowledge that TinkerBat Tech LLC, not Apple, is responsible
+            for addressing any claims you or any third party may have relating
+            to Blood Moon Almanac or your possession and use of the app,
+            including but not limited to:
+          </p>
+          <ul>
+            <li>Product liability claims</li>
+            <li>
+              Any claim that the app fails to conform to any applicable legal or
+              regulatory requirement
+            </li>
+            <li>
+              Claims arising under consumer protection, privacy, or similar
+              legislation
+            </li>
+          </ul>
+          <p>
+            To the maximum extent permitted by applicable law, TinkerBat Tech
+            LLC's total liability for any claim arising from or related to this
+            Agreement or your use of the app shall not exceed the amount you
+            paid for the app, if any.
+          </p>
+        </div>
+
+        <div className="legal-section">
           <h2>Legal Compliance</h2>
           <p>You represent and warrant that:</p>
           <ul>
@@ -624,6 +829,17 @@ function TermsPage() {
               restricted parties
             </li>
           </ul>
+        </div>
+
+        <div className="legal-section">
+          <h2>Third-Party Beneficiary</h2>
+          <p>
+            You acknowledge and agree that Apple and its subsidiaries are
+            third-party beneficiaries of this Agreement. Upon your acceptance of
+            this Agreement, Apple has the right (and will be deemed to have
+            accepted the right) to enforce this Agreement against you as a
+            third-party beneficiary.
+          </p>
         </div>
 
         <div className="legal-section">
