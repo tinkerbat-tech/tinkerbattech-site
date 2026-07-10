@@ -81,8 +81,8 @@ a:hover {
 }
 
 .nav-logo-img {
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
 }
 
 .nav-logo-text {
@@ -1138,7 +1138,7 @@ a.contact-card:hover {
 }
 
 .footer-logo {
-  width: 75px;
+  width: 100px;
   height: auto;
   filter: drop-shadow(0 0 5px rgba(205, 133, 63, 0.3));
 }
@@ -1152,7 +1152,7 @@ a.contact-card:hover {
 
 .footer-links button {
   font-family: var(--font-body);
-  color: var(--brass);
+  color: var(--teal-glow);
   background: none;
   border: none;
   cursor: pointer;

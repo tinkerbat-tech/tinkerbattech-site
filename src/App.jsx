@@ -45,7 +45,7 @@ function Navbar({ currentPage, onNavigate }) {
       <div className="nav-content">
         <button className="nav-logo" onClick={() => onNavigate("home")}>
           <img
-            src="/steambat-logo.png"
+            src="/artemis_tinkerbat.png"
             alt="TinkerBat"
             className="nav-logo-img"
           />
@@ -936,7 +936,11 @@ function Footer({ onNavigate }) {
   return (
     <footer className="site-footer">
       <div className="footer-content">
-        <img src="/steambat.svg" alt="TinkerBat" className="footer-logo" />
+        <img
+          src="/artemis_tinkerbat.png"
+          alt="TinkerBat"
+          className="footer-logo"
+        />
         <nav className="footer-links">
           <button onClick={() => onNavigate("privacy")}>Privacy Policy</button>
           <button onClick={() => onNavigate("terms")}>Terms of Use</button>
