@@ -183,21 +183,18 @@ function HomePage({ onNavigate }) {
             </div>
             <div className="app-card-screenshots">
               <div className="app-card-screenshot-row">
-                <img
-                  src="/screenshot-1.png"
-                  alt="Adventure Graveyard"
-                  className="app-card-img"
-                />
-                <img
-                  src="/screenshot-2.png"
-                  alt="Adventure Graveyard"
-                  className="app-card-img main"
-                />
-                <img
-                  src="/screenshot-3.png"
-                  alt="Adventure Graveyard"
-                  className="app-card-img"
-                />
+                <div className="app-card-placeholder">
+                  <span>🪦</span>
+                  <span>Screenshots soon</span>
+                </div>
+                <div className="app-card-placeholder">
+                  <span>🪦</span>
+                  <span>Screenshots soon</span>
+                </div>
+                <div className="app-card-placeholder">
+                  <span>🪦</span>
+                  <span>Screenshots soon</span>
+                </div>
               </div>
             </div>
             <div className="app-card-store">
