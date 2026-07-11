@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "./colors.css";
 import "./App.css";
+import "./WelcomeMessage.jsx";
+import WelcomeMessage from "./WelcomeMessage.jsx";
 
 // ============================================================
 // COMPONENTS
@@ -28,24 +30,13 @@ function LabFumes() {
   );
 }
 
-function FlyingBat({ delay, startSide }) {
-  return (
-    <div
-      className={`flying-bat ${startSide}`}
-      style={{ animationDelay: `${delay}s` }}
-    >
-      🦇
-    </div>
-  );
-}
-
 function Navbar({ currentPage, onNavigate }) {
   return (
     <nav className="navbar">
       <div className="nav-content">
         <button className="nav-logo" onClick={() => onNavigate("home")}>
           <img
-            src="/artemis_tinkerbat.png"
+            src="/artemis_tinkerbat-cropped.png"
             alt="TinkerBat"
             className="nav-logo-img"
           />
@@ -71,10 +62,10 @@ function Navbar({ currentPage, onNavigate }) {
             Terms
           </button>
           <button
-            className={`nav-link ${currentPage === "contact" ? "active" : ""}`}
-            onClick={() => onNavigate("contact")}
+            className={`nav-link ${currentPage === "support" ? "active" : ""}`}
+            onClick={() => onNavigate("support")}
           >
-            Contact
+            Support
           </button>
         </div>
       </div>
@@ -91,25 +82,27 @@ function HomePage({ onNavigate }) {
     <>
       {/* Hero Section */}
       <section className="hero">
+        <img
+          src="/artemis_tinkerbat-cropped.png"
+          alt=""
+          className="hero-logo"
+        />
         <LabFumes />
-        <FlyingBat delay={2} startSide="right" />
-        <FlyingBat delay={5} startSide="left" />
-        <FlyingBat delay={8} startSide="right" />
-        <FlyingBat delay={11} startSide="left" />
-        <FlyingBat delay={14} startSide="right" />
 
         <div className="hero-content">
-          {/*<img src="/steambat.svg" alt="TinkerBat Tech" className="hero-logo" />*/}
-          <h1 className="hero-title">
-            <FlickerText>TinkerBat Tech</FlickerText>
-          </h1>
-          <p className="hero-tagline">
-            Dreamt in moonlight. Forged in darkness.
-          </p>
-          <p className="hero-subtitle">
-            Spooky apps for everyday use — built with imagination, chaos, and an
-            unreasonable number of bats.
-          </p>
+          <div className="hero-text-top">
+            <h1 className="hero-title">
+              <FlickerText>TinkerBat Tech</FlickerText>
+            </h1>
+          </div>
+          <div className="hero-text-bottom">
+            <p className="hero-tagline">
+              Dreamt in moonlight. Forged in darkness.
+            </p>
+            <p className="hero-subtitle">
+              <WelcomeMessage />
+            </p>
+          </div>
         </div>
       </section>
 
@@ -138,7 +131,6 @@ function HomePage({ onNavigate }) {
               <span>☁️ No Cloud</span>
               <span>🩸 Flow Journaling</span>
               <span>😣 Symptom Logging</span>
-              <span>🐺 NO SUBSCRIPTIONS</span>
             </div>
             <div className="app-card-screenshots">
               <div className="app-card-placeholder">
@@ -544,7 +536,7 @@ function PrivacyPage() {
           </div>
 
           <div className="legal-section">
-            <h3>Contact</h3>
+            <h3>Support</h3>
             <p>
               If you have questions about this Privacy Policy, contact us at{" "}
               <a href="mailto:support@tinkerbattech.com">
@@ -870,7 +862,7 @@ function TermsPage() {
         </div>
 
         <div className="legal-section">
-          <h2>Contact</h2>
+          <h2>Support</h2>
           <p>
             Questions about these terms? Contact us at{" "}
             <a href="mailto:support@tinkerbattech.com">
@@ -887,39 +879,39 @@ function TermsPage() {
   );
 }
 
-function ContactPage() {
+function SupportPage() {
   return (
-    <section className="contact-page">
-      <div className="contact-content">
-        <span className="contact-emoji">📡</span>
-        <h1 className="contact-title">Transmit a Signal</h1>
-        <p className="contact-subtitle">
+    <section className="support-page">
+      <div className="support-content">
+        <span className="support-emoji">📡</span>
+        <h1 className="support-title">Transmit a Signal</h1>
+        <p className="support-subtitle">
           Got a question, bug report, or just want to talk about bats?
         </p>
 
-        <div className="contact-cards">
-          <a href="mailto:support@tinkerbattech.com" className="contact-card">
-            <span className="contact-card-icon">📧</span>
-            <span className="contact-card-label">Email</span>
-            <span className="contact-card-value">
+        <div className="support-cards">
+          <a href="mailto:support@tinkerbattech.com" className="support-card">
+            <span className="support-card-icon">📧</span>
+            <span className="support-card-label">Email</span>
+            <span className="support-card-value">
               support@tinkerbattech.com
             </span>
           </a>
 
-          <div className="contact-card">
-            <span className="contact-card-icon">🏠</span>
-            <span className="contact-card-label">Headquarters</span>
-            <span className="contact-card-value">Somewhere in Time</span>
+          <div className="support-card">
+            <span className="support-card-icon">🏠</span>
+            <span className="support-card-label">Headquarters</span>
+            <span className="support-card-value">Somewhere in Time</span>
           </div>
 
-          <div className="contact-card">
-            <span className="contact-card-icon">🦇</span>
-            <span className="contact-card-label">Bat Count</span>
-            <span className="contact-card-value">Immeasurable</span>
+          <div className="support-card">
+            <span className="support-card-icon">🦇</span>
+            <span className="support-card-label">Bat Count</span>
+            <span className="support-card-value">Immeasurable</span>
           </div>
         </div>
 
-        <div className="contact-footer-note">
+        <div className="support-footer-note">
           <p>
             <em>
               Response times may vary depending on the phase of the moon and
@@ -937,14 +929,14 @@ function Footer({ onNavigate }) {
     <footer className="site-footer">
       <div className="footer-content">
         <img
-          src="/artemis_tinkerbat.png"
+          src="/artemis_tinkerbat-cropped.png"
           alt="TinkerBat"
           className="footer-logo"
         />
         <nav className="footer-links">
           <button onClick={() => onNavigate("privacy")}>Privacy Policy</button>
           <button onClick={() => onNavigate("terms")}>Terms of Use</button>
-          <button onClick={() => onNavigate("contact")}>Contact</button>
+          <button onClick={() => onNavigate("support")}>Support</button>
         </nav>
         <p className="copyright">
           © {new Date().getFullYear()} TinkerBat Tech LLC. All rights reserved.
@@ -976,7 +968,7 @@ function App() {
       {currentPage === "home" && <HomePage onNavigate={navigate} />}
       {currentPage === "privacy" && <PrivacyPage />}
       {currentPage === "terms" && <TermsPage />}
-      {currentPage === "contact" && <ContactPage />}
+      {currentPage === "support" && <SupportPage />}
 
       <Footer onNavigate={navigate} />
     </div>

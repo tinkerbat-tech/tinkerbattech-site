@@ -31,8 +31,12 @@
   --steel-dark: #262a2f;
   --steel: #4a4e54;
   --slate: #666666;
-  --silver: #c0c0c0;
   --bone: #e5dfd6;
+  --beige: #e2e2e2;
+  --light-beige: #e3e3e3;
+  --idk: #b5b5b5;
+  --silver: #c0c0c0;
+  --white: #ffffff;
 
   /* === ACCENTS === */
   --crimson: #dc143c;
@@ -52,6 +56,8 @@
   --font-display: "Great Vibes", serif;
   --font-heading: "Playfair Display", serif;
   --font-body: "Source Serif 4", serif;
+  --alice: "Alice", serif;
+  --mea-culpa: "Mea Culpa", cursive;
 
   /* === SPACING === */
   --section-padding: clamp(3rem, 8vw, 6rem) clamp(1rem, 5vw, 4rem);
