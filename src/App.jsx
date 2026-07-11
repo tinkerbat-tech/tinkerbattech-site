@@ -187,14 +187,6 @@ function HomePage({ onNavigate }) {
                   <span>🪦</span>
                   <span>Screenshots soon</span>
                 </div>
-                <div className="app-card-placeholder">
-                  <span>🪦</span>
-                  <span>Screenshots soon</span>
-                </div>
-                <div className="app-card-placeholder">
-                  <span>🪦</span>
-                  <span>Screenshots soon</span>
-                </div>
               </div>
             </div>
             <div className="app-card-store">
