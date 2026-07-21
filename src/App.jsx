@@ -244,7 +244,7 @@ function PrivacyPage() {
     <section className="legal-page">
       <div className="legal-content">
         <h1 className="legal-title">🔒 Privacy Policy</h1>
-        <p className="legal-updated">Last updated: April 23, 2026</p>
+        <p className="legal-updated">Last updated: July 20, 2026</p>
 
         <div className="legal-section">
           <h2>Your Data, Your Device</h2>
