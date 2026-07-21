@@ -313,25 +313,34 @@ function PrivacyPage() {
           </div>
 
           <div className="legal-section">
-            <h3>📸 Screenshot Protection</h3>
+            <h3>📸 Screen Capture Protection</h3>
             <p>
-              Blood Moon Almanac blocks screenshots on sensitive screens
+              Blood Moon Almanac blocks screen recording on sensitive screens
               including medications, cycle data, and symptoms. This feature is
               ON by default to protect your privacy automatically.
             </p>
             <p>
-              When enabled, screenshots on protected screens produce a blank
-              image on iOS or are blocked entirely on Android. This feature runs
-              locally on your device and does not transmit any data.
+              On Android, screenshots on protected screens are blocked. On iOS,
+              the operating system does not allow apps to reliably prevent still
+              screenshots — protected screens may capture as a blank image, but
+              this behavior is controlled by the operating system and is not
+              guaranteed. Blood Moon Almanac therefore also detects when a
+              screenshot is taken and warns you that the image may exist outside
+              the app's protection.
             </p>
             <p>
-              You can disable screenshot blocking in Settings, but doing so
-              requires PIN entry to confirm the change.
+              The app also obscures its contents in the app switcher, so cycle
+              and symptom data isn't visible in the multitasking preview.
+            </p>
+            <p>
+              All of this runs locally on your device and does not transmit any
+              data. You can disable screen capture protection in Settings, but
+              doing so requires PIN entry to confirm the change.
             </p>
           </div>
 
           <div className="legal-section">
-            <h3>☁️ Why Screenshot Blocking Matters</h3>
+            <h3>☁️ Why Screenshots Matter</h3>
             <p>
               A screenshot of cycle, symptom, or medication data becomes a photo
               in your device's photo library. Once it exists outside the app's
@@ -339,56 +348,53 @@ function PrivacyPage() {
               privacy protections no longer apply. Common pathways include:
             </p>
             <ul>
-              <li>
-                <strong>Cloud photo sync services:</strong> Many photo apps
-                automatically upload images from your device to cloud servers,
-                where they may be stored indefinitely and accessed by the
-                service provider.
-              </li>
-              <li>
-                <strong>Device backup services:</strong> Automated backup tools
-                that protect your phone's data may include the entire photo
-                library, meaning sensitive screenshots could be backed up
-                alongside your contacts and other data.
-              </li>
-              <li>
-                <strong>Photo content recognition:</strong> Modern phones
-                include features that scan photos to identify objects, recognize
-                text, and search by content. Once a screenshot enters your photo
-                library, these features may process it.
-              </li>
-              <li>
-                <strong>Third-party apps:</strong> Any app you've granted photo
-                library access to can read your entire photo collection,
-                including screenshots of sensitive health data.
-              </li>
-              <li>
-                <strong>Shared albums and direct sharing:</strong> Photos can be
-                inadvertently shared through automatic shared album syncing,
-                accidental device-to-device transfers, or multi-select sharing
-                actions.
-              </li>
-              <li>
-                <strong>Phone repair and resale:</strong> Photos that haven't
-                been deleted may persist when a phone is repaired, resold, or
-                recovered.
-              </li>
+              • Cloud photo sync services: Many photo apps automatically upload
+              images from your device to cloud servers, where they may be stored
+              indefinitely and accessed by the service provider.
+            </ul>
+            <ul>
+              • Device backup services: Automated backup tools that protect your
+              phone's data may include the entire photo library, meaning
+              sensitive screenshots could be backed up alongside your contacts
+              and other data.
+            </ul>
+            <ul>
+              • Photo content recognition: Modern phones include features that
+              scan photos to identify objects, recognize text, and search by
+              content. Once a screenshot enters your photo library, these
+              features may process it.
+            </ul>
+            <ul>
+              • Third-party apps: Any app you've granted photo library access to
+              can read your entire photo collection, including screenshots of
+              sensitive health data.
+            </ul>
+            <ul>
+              • Shared albums and direct sharing: Photos can be inadvertently
+              shared through automatic shared album syncing, accidental
+              device-to-device transfers, or multi-select sharing actions.
+            </ul>
+            <ul>
+              • Phone repair and resale: Photos that haven't been deleted may
+              persist when a phone is repaired, resold, or recovered.
             </ul>
             <p>
-              None of these pathways exist when screenshot blocking is on,
-              because the screenshot is never created in the first place. The
-              data stays inside the app's encrypted local storage on your
-              device, protected by your PIN, your biometric, and your phone's
-              hardware security. It never leaves your device, so it cannot be
-              exposed through the photo library or any service that reads from
-              it.
+              On Android, screenshot blocking prevents these pathways entirely,
+              because the screenshot is never created. On iOS, where the
+              operating system does not permit apps to reliably block
+              screenshots, Blood Moon Almanac instead warns you the moment one
+              is taken, so you can decide whether to keep or delete it.
             </p>
             <p>
-              If you do choose to take a screenshot of your data, for instance,
-              to share with a healthcare provider, please be aware that you are
-              responsible for the security of that screenshot once it exists.
-              Consider deleting it after sharing, and review which apps have
-              access to your photo library.
+              Data that stays inside the app remains in encrypted local storage
+              on your device, protected by your PIN, your biometric, and your
+              phone's hardware security.
+            </p>
+            <p>
+              If a screenshot of your data does exist — for instance, one you
+              took to share with a healthcare provider — you are responsible for
+              its security once it leaves the app. Consider deleting it after
+              sharing, and review which apps have access to your photo library.
             </p>
           </div>
 
